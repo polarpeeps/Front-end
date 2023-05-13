@@ -1,7 +1,60 @@
-<h1>Welcome to My Website!</h1>
-<!-- Add an image of yourself that links to the about page -->
-<a href="./public/about.html"><img src="./assets/images/cat.png" alt="cat" /></a>
-<hr />
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Add a link to your contact me page here -->
-<a href="./public/contact.html">Contact Me</a>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag {
+      width: 900px;
+      height: 600px;
+      position: relative;
+      background-color: #CE1126;
+
+    }
+
+    .flag > div {
+      background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+    }
+
+    .flag > div > div {
+      background-color: white;
+      position: absolute;
+
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      font-size: 5rem;
+      color: white;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flag>div div p {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
